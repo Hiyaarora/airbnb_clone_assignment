@@ -1,6 +1,6 @@
 # Airbnb Listing Clone
 
-Desktop-only clone of an Airbnb listing page — Listing Page, Photo Tour and Lightbox — built as a take-home assignment. Frontend only, static local data, no backend.
+Desktop-only clone of an Airbnb listing page — Listing Page, Photo Tour and Lightbox — built as a take-home assignment.
 
 Live: https://airbnb-clone-olive-kappa.vercel.app
 
