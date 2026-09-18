@@ -1,0 +1,22 @@
+/* Reference toast: fixed bottom 32px, centred, #222 bg, 14px/500, 14px 22px padding (audit §13). */
+.toast {
+  position: fixed;
+  bottom: 32px;
+  left: 50%;
+  z-index: var(--z-toast);
+  padding: 14px 22px;
+  font-weight: 500;
+  color: var(--color-text-on-dark);
+  background: var(--color-bg-dark);
+  border-radius: var(--radius-md);
+  white-space: nowrap;
+  opacity: 0;
+  transform: translate(-50%, 20px);
+  transition: opacity var(--duration-toast), transform var(--duration-toast);
+  pointer-events: none;
+}
+
+.toast[data-visible="true"] {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}

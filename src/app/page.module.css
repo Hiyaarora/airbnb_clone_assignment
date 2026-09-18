@@ -1,0 +1,14 @@
+/* Audit §2: 1fr 372px, 96px gap; wide sections below with a hairline top border */
+.columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) var(--booking-column-width);
+  column-gap: var(--column-gap);
+}
+
+.left {
+  min-width: 0;
+}
+
+.wide {
+  border-top: 1px solid var(--color-border-hairline);
+}

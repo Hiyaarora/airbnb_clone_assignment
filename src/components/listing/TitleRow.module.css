@@ -1,0 +1,48 @@
+/* Audit §5: padding 32px 0 18px, h1 26px/500/30px, Share/Save 34px tall */
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 32px 0 18px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.actions {
+  display: flex;
+  gap: 2px;
+  flex: 0 0 auto;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  font-weight: 500;
+  line-height: 18px; /* UA `normal` in the reference → 34px button */
+  border-radius: var(--radius-md);
+  transition: background var(--duration-hover-bg), transform 50ms;
+}
+
+.action:hover {
+  background: var(--color-bg-muted);
+}
+
+.action:active {
+  transform: scale(0.96);
+}
+
+.label {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.heartSaved {
+  color: var(--color-brand);
+}

@@ -1,0 +1,141 @@
+/* Audit §7.8 */
+.block {
+  padding: 32px 0;
+  border-top: 1px solid var(--color-border-hairline);
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.43;
+}
+
+.subtitle {
+  margin: 6px 0 22px;
+  color: var(--color-text-secondary);
+}
+
+.months {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 56px;
+}
+
+.arrows {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.monthTitle {
+  margin-bottom: 18px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.43;
+  text-align: center;
+}
+
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.43;
+  text-align: center;
+}
+
+.days {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.blank {
+  aspect-ratio: 1 / 1;
+  visibility: hidden;
+}
+
+.day {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  cursor: auto;
+}
+
+.day[data-state="start"],
+.day[data-state="end"] {
+  color: var(--color-text-on-dark);
+  background: var(--color-bg-dark);
+}
+
+/* Half band behind the endpoints so the range reads as a continuous strip. */
+.day[data-state="start"]::before,
+.day[data-state="end"]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 50%;
+  background: var(--color-bg-muted);
+}
+
+.day[data-state="start"]::before {
+  right: 0;
+}
+
+.day[data-state="end"]::before {
+  left: 0;
+}
+
+.day[data-state="range"] {
+  background: var(--color-bg-muted);
+  border-radius: 0;
+}
+
+.day[data-unavailable] {
+  color: var(--color-text-disabled);
+  text-decoration: line-through;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 18px;
+}
+
+.keyboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 22px;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+}
+
+.clear {
+  padding: 1px 6px;
+  font-weight: 500;
+  line-height: 18px;
+  text-decoration: underline;
+}

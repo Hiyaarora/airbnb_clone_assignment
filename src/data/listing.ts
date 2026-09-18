@@ -1,0 +1,291 @@
+import type { Listing } from "@/types/listing";
+
+/**
+ * Static listing content, transcribed from the reference's visible text
+ * (docs/reference-measurements/rendered-text-content.txt). No backend — this is the single
+ * source of truth for every section on the page.
+ */
+export const listing: Listing = {
+  title: "Romantic Jacuzzi 1BHK Candolim | Mirashya UG10",
+  propertyType: "Serviced apartments",
+  location: "Candolim, Goa, India",
+  overviewTitle: "Entire serviced apartment in Candolim, India",
+  meta: ["3 guests", "1 bedroom", "1 bed", "1 bathroom"],
+  rating: "4.95",
+  reviewCount: 19,
+  guestFavouriteText: "One of the most loved homes on Airbnb, according to guests",
+  host: {
+    name: "Mirashya Homes",
+    avatar: "/avatars/host.jpeg",
+    tenure: "2 years hosting",
+    reviews: "1,463",
+    rating: "4.68",
+    yearsHosting: "2",
+    facts: [
+      { icon: "cake", text: "Born in the 80s" },
+      { icon: "graduation", text: "Where I went to school: NICMAR GOA" },
+    ],
+    responseRate: "Response rate: 100%",
+    responseTime: "Responds within an hour",
+    coHosts: [
+      { name: "Sharath", avatar: "/avatars/co1.jpg" },
+      { name: "Aman Dev Pahwa", avatar: "/avatars/co2.jpg" },
+      { name: "Maria Karen Priyanka", avatar: "/avatars/co3.jpg" },
+      { name: "Simran", avatar: "/avatars/rev5.jpeg" },
+      { name: "Pallavi", avatar: "/avatars/rev1.jpeg" },
+      { name: "Sanyukta", avatar: "/avatars/rev2.jpeg" },
+      { name: "Shruti", initialColors: { fg: "#d4356e", bg: "#fde7ef" } },
+      { name: "Amisha", initialColors: { fg: "#3a6ecc", bg: "#e7f0fd" } },
+    ],
+  },
+  highlights: [
+    {
+      icon: "outdoor",
+      title: "Outdoor entertainment",
+      description: "The pool and alfresco dining are great for summer trips.",
+    },
+    {
+      icon: "cooling",
+      title: "Designed for staying cool",
+      description: "Beat the heat with the A/C and ceiling fan.",
+    },
+    {
+      icon: "checkin",
+      title: "Self check-in",
+      description: "You can check in with the building staff.",
+    },
+  ],
+  translationNotice: "Some info has been automatically translated.",
+  description:
+    "🌴 Plan Your Relaxing Holiday at Amor De Goa by Mirashya Homes! ✨ Stay in this cozy 1BHK in the heart of Candolim, featuring a private jacuzzi 🛁 for the perfect unwind. Enjoy high-speed WiFi 💻, Smart TV 📺, pet-friendly comfort 🐾, and stylish interiors. Just minutes from Candolim Beach 🏖️, popular cafés, restaurants, and nightlife 🍹, it’s ideal for couples seeking romance, relaxation, and a touch of luxury in North Goa. ❤️🌴",
+  sleeping: [
+    { photoId: "67c61c6f", title: "Bedroom", detail: "1 double bed" },
+    { photoId: "a9831aeb", title: "Living room", detail: "1 sofa" },
+  ],
+  amenitiesPreview: [
+    { label: "Kitchen", icon: "kitchen" },
+    { label: "Wifi", icon: "wifi" },
+    { label: "Dedicated workspace", icon: "workspace" },
+    { label: "Free parking on premises", icon: "parking" },
+    { label: "Pool", icon: "pool" },
+    { label: "Hot tub", icon: "hot-tub" },
+    { label: "Pets allowed", icon: "pets" },
+    { label: "Exterior security cameras on property", icon: "camera" },
+    { label: "Carbon monoxide alarm", icon: "co-alarm", unavailable: true },
+    { label: "Smoke alarm", icon: "smoke-alarm", unavailable: true },
+  ],
+  amenityCount: 50,
+  amenityGroups: [
+    {
+      title: "Bathroom",
+      items: [
+        { label: "Hairdryer", icon: "hairdryer" },
+        { label: "Cleaning products", icon: "cleaning-products" },
+        { label: "Shampoo", icon: "shampoo" },
+        { label: "Hot water", icon: "hot-water" },
+        { label: "Shower gel", icon: "shower-gel" },
+      ],
+    },
+    {
+      title: "Bedroom and laundry",
+      items: [
+        { label: "Washing machine", icon: "washer" },
+        { label: "Hangers", icon: "hangers" },
+        { label: "Bed linen", icon: "bed-linen" },
+        { label: "Room-darkening blinds", icon: "blinds" },
+        { label: "Iron", icon: "iron" },
+        { label: "Clothes storage", icon: "wardrobe" },
+        { label: "Cot", icon: "cot" },
+      ],
+    },
+    { title: "Entertainment", items: [{ label: "TV", icon: "tv" }] },
+    { title: "Family", items: [{ label: "Cot", icon: "cot" }] },
+    {
+      title: "Heating and cooling",
+      items: [
+        { label: "Air conditioning", icon: "ac" },
+        { label: "Ceiling fan", icon: "fan" },
+      ],
+    },
+    {
+      title: "Home safety",
+      items: [
+        { label: "Exterior security cameras on property", icon: "camera" },
+        { label: "Carbon monoxide alarm", icon: "co-alarm", unavailable: true },
+        { label: "Smoke alarm", icon: "smoke-alarm", unavailable: true },
+      ],
+    },
+    {
+      title: "Internet and office",
+      items: [
+        { label: "Wifi", icon: "wifi" },
+        { label: "Dedicated workspace", icon: "workspace" },
+      ],
+    },
+    {
+      title: "Kitchen and dining",
+      items: [
+        { label: "Kitchen", icon: "kitchen" },
+        { label: "Fridge", icon: "fridge" },
+        { label: "Freezer", icon: "freezer" },
+        { label: "Microwave", icon: "microwave" },
+        { label: "Cooking basics", icon: "cooking-basics" },
+        { label: "Crockery and cutlery", icon: "crockery" },
+        { label: "Kettle", icon: "kettle" },
+        { label: "Coffee", icon: "coffee" },
+        { label: "Wine glasses", icon: "wine" },
+        { label: "Toaster", icon: "toaster" },
+        { label: "Blender", icon: "blender" },
+        { label: "Cooker", icon: "cooker" },
+      ],
+    },
+    { title: "Location features", items: [{ label: "Private entrance", icon: "entrance" }] },
+    {
+      title: "Outdoor",
+      items: [
+        { label: "Patio or balcony", icon: "patio" },
+        { label: "Outdoor dining area", icon: "outdoor-dining" },
+      ],
+    },
+    {
+      title: "Parking and facilities",
+      items: [
+        { label: "Free parking on premises", icon: "parking" },
+        { label: "Pool", icon: "pool" },
+        { label: "Hot tub", icon: "hot-tub" },
+        { label: "Gym", icon: "gym" },
+      ],
+    },
+    {
+      title: "Services",
+      items: [
+        { label: "Pets allowed", icon: "pets" },
+        { label: "Cleaning available during stay", icon: "cleaning" },
+        { label: "Long-term stays allowed", icon: "long-term" },
+        { label: "Self check-in", icon: "self-checkin" },
+      ],
+    },
+  ],
+  stay: {
+    nights: 5,
+    checkIn: "2026-10-18",
+    checkOut: "2026-10-23",
+    checkInDisplay: "10/18/2026",
+    checkOutDisplay: "10/23/2026",
+    rangeLabel: "18 Oct 2026 - 23 Oct 2026",
+    guests: "2 guests",
+    price: "₹ 28,499",
+    freeCancellationBefore: "17 October",
+  },
+  reviewSummary: {
+    subtitle: "This home is a guest favourite based on ratings, reviews and reliability",
+    distribution: [95, 5, 0, 0, 0],
+    categories: [
+      { label: "Cleanliness", score: "5.0", icon: "spray" },
+      { label: "Accuracy", score: "5.0", icon: "check-circle" },
+      { label: "Check-in", score: "5.0", icon: "key" },
+      { label: "Communication", score: "5.0", icon: "chat" },
+      { label: "Location", score: "4.8", icon: "map" },
+      { label: "Value", score: "4.8", icon: "tag" },
+    ],
+    chips: [
+      { label: "Comfort", count: 6, icon: "/chips/comfort.png" },
+      { label: "Accuracy", count: 5, icon: "/chips/accuracy.png" },
+      { label: "Hot tub", count: 5, icon: "/chips/hot-tub.png" },
+      { label: "Condition", count: 4, icon: "/chips/condition.png" },
+      { label: "Hospitality", count: 8, icon: "/chips/hospitality.png" },
+      { label: "Cleanliness", count: 4, icon: "/chips/cleanliness.png" },
+      { label: "Amenities", count: 2, icon: "/chips/amenities.png" },
+      { label: "Decor", count: 2, icon: "/chips/decor.png" },
+      { label: "Indoor spaces", count: 2, icon: "/chips/indoor-spaces.png" },
+      { label: "Location", count: 2, icon: "/chips/location.png" },
+    ],
+  },
+  reviews: [
+    {
+      id: "amit",
+      name: "Amit",
+      initialColors: { fg: "#c1852a", bg: "#f7ede2" },
+      tenure: "2 months on Airbnb",
+      date: "1 week ago",
+      text: "Very helpful and responsive team. Safe and peaceful stay. loved everything about the property.",
+    },
+    {
+      id: "aheesh",
+      name: "Aheesh",
+      avatar: "/avatars/rev1.jpeg",
+      tenure: "3 years on Airbnb",
+      date: "2 weeks ago",
+      text: "We had a wonderful stay. The apartment was clean, comfortable, and exactly as shown in the photos. The host was very responsive and helpful throughout our stay. We would definitely recommend this place and would love to stay here again.",
+    },
+    {
+      id: "samiksha",
+      name: "Samiksha",
+      avatar: "/avatars/rev2.jpeg",
+      tenure: "8 months on Airbnb",
+      date: "May 2026",
+      text: "the host nitish was really great help",
+    },
+    {
+      id: "vedant",
+      name: "Vedant",
+      initialColors: { fg: "#8b6fc4", bg: "#efeaf7" },
+      tenure: "4 years on Airbnb",
+      date: "May 2026",
+      text: "We had an amazing stay at this property in Goa! The entire home was spotless and exceptionally well-maintained, making us feel comfortable from the moment we arrived. The cleanliness standards were truly impressive, with every corner of the house looking fresh and pristine.\nThe highlight of our stay was definitely the jacuzzi. It was clean, well-kept, and the perfect place to relax after a day of exploring Goa. It added a luxurious touch to our vacation and made our experience even more memorable.\nThe property was exactly as described, well-equipped, and offered a peaceful atmosphere. We would highly recommend this place to anyone looking for a comfortable, clean, and relaxing stay in Goa. Looking forward to visiting again!",
+    },
+    {
+      id: "vaibhav",
+      name: "Vaibhav S",
+      avatar: "/avatars/rev3.jpeg",
+      tenure: "3 years on Airbnb",
+      date: "May 2026",
+      text: "Great great experience living out there , can't expect more , will always look for it in the future and will recommend my friends too.",
+    },
+    {
+      id: "mohd",
+      name: "Mohd",
+      avatar: "/avatars/rev4.jpeg",
+      tenure: "5 years on Airbnb",
+      date: "May 2026",
+      text: "Great place. Exactly as described in the listing.",
+    },
+  ],
+  locationText: "Exact location will be provided after booking.",
+  neighbourhood:
+    "Located in the heart of Candolim, Amor de Goa offers a peaceful stay with easy access to beaches, cafés, and popular attractions.",
+  thingsToKnow: [
+    {
+      icon: "calendar",
+      title: "Cancellation policy",
+      lines: [
+        "Free cancellation before 17 October. Cancel before check-in on 18 October for a partial refund.",
+        "Review this host’s full policy for details.",
+      ],
+    },
+    {
+      icon: "rules",
+      title: "House rules",
+      lines: ["Check-in after 2:00 pm", "Checkout before 11:00 am", "3 guests maximum"],
+    },
+    {
+      icon: "safety",
+      title: "Safety & property",
+      lines: [
+        "Carbon monoxide alarm not reported",
+        "Smoke alarm not reported",
+        "Exterior security cameras on property",
+      ],
+    },
+  ],
+  similar: [
+    { id: "s1", image: "/similar/s1.jpeg", title: "Beautiful Studio with a view to die for", price: "₹ 23,600", rating: "4.91" },
+    { id: "s2", image: "/similar/s2.jpeg", title: "NAQAB - 1bhk with private pool", price: "₹ 42,218", rating: "4.95" },
+    { id: "s3", image: "/similar/s3.jpeg", title: "Greentique Luxury Flat with plunge pool, Calangute", price: "₹ 44,506", rating: "4.94" },
+    { id: "s4", image: "/similar/s4.jpeg", title: "The Tropical Studio | 5 mins to Beach", price: "₹ 22,824", rating: "4.96" },
+    { id: "s5", image: "/similar/s5.jpeg", title: "Luxury Casa Bella 1BHK with plunge pool, Calangute", price: "₹ 39,942", rating: "4.95" },
+    { id: "s6", image: "/similar/s6.jpeg", title: "Kanso by Earthen Window | Jacuzzi | Terrace | Pool", price: "₹ 45,648", rating: "5.0" },
+    { id: "s7", image: "/similar/s2.jpeg", title: "Luxury Apt | Private Pool | 6 Mins from Beach", price: "₹ 48,786", rating: "4.93" },
+    { id: "s8", image: "/similar/s4.jpeg", title: "Serendipity Cottage - Calm Stay in Calangute-Baga.", price: "₹ 22,824", rating: "4.92" },
+  ],
+};

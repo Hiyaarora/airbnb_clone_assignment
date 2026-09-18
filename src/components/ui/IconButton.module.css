@@ -1,0 +1,38 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex: 0 0 auto;
+  transition: background var(--duration-icon-bg), transform 80ms;
+}
+
+.ghost {
+  background: transparent;
+}
+
+.ghost:hover {
+  background: var(--color-bg-muted);
+}
+
+.outline {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border-dark);
+}
+
+.outline:hover:not(:disabled) {
+  background: var(--color-bg-soft);
+}
+
+/* Reference: disabled lightbox arrows are opacity .28 with a #CCC border (audit §11). */
+.outline:disabled {
+  opacity: 0.28;
+  border-color: var(--color-border-disabled);
+  cursor: default;
+}
+
+.button:active:not(:disabled) {
+  transform: scale(0.96);
+}

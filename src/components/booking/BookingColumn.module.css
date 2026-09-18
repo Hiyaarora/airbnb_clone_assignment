@@ -1,0 +1,165 @@
+/* Audit §8 */
+.aside {
+  position: relative;
+}
+
+.sticky {
+  position: sticky;
+  top: 100px;
+}
+
+/* Promo card: padding 16, 1px #DDD, radius 12, gap 12 */
+.promo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.promoIcon {
+  flex: 0 0 auto;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.promoText {
+  flex: 1 1 0;
+  line-height: 1.3;
+}
+
+.promoLink {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.claim {
+  padding: 8px 14px;
+  font-weight: 500;
+  line-height: 18px;
+  background: var(--color-bg-soft);
+  border-radius: var(--radius-md);
+}
+
+/* Booking card: padding 22px 24px 24px, soft border, radius 12, card shadow */
+.card {
+  padding: 22px 24px 24px;
+  border: 1px solid var(--color-border-soft);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+
+.priceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.43;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.priceSuffix {
+  font-size: 15px;
+  line-height: 1.43;
+}
+
+.fields {
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.dates {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.field {
+  padding: 10px 12px;
+}
+
+.fieldCheckIn {
+  border-right: 1px solid var(--color-border-strong);
+}
+
+.fieldLabel {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.43;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.fieldValue {
+  margin-top: 2px;
+}
+
+.guests {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-top: 1px solid var(--color-border-strong);
+}
+
+.cancellation {
+  margin: 16px 0;
+  padding: 8px;
+  font-size: 13px;
+  line-height: 1.43;
+  color: var(--color-text-secondary);
+  text-align: center;
+  background: var(--color-bg-soft);
+  border-radius: var(--radius-md);
+}
+
+.cancellationDate {
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.reserve {
+  display: block;
+  width: 100%;
+  height: 48px;
+  margin-top: 2px;
+  padding: 0 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-text-on-dark);
+  background: var(--gradient-cta);
+  border-radius: var(--radius-pill);
+  transition: filter var(--duration-hover-bg), transform 50ms;
+}
+
+.reserve:active {
+  transform: scale(0.98);
+}
+
+.note {
+  margin-top: 16px;
+  color: var(--color-text-secondary);
+  text-align: center;
+}
+
+.report {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 26px;
+  color: var(--color-text-secondary);
+}
+
+.reportLink {
+  text-decoration: underline;
+}

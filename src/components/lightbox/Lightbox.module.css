@@ -1,0 +1,94 @@
+/* Audit §11 */
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-lightbox);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity var(--duration-lightbox),
+    visibility 0s linear var(--duration-lightbox);
+}
+
+.overlay[data-open="true"] {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity var(--duration-lightbox);
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  height: 72px;
+  padding: 0 24px;
+}
+
+.grid {
+  margin-left: -8px;
+}
+
+.title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.43;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+}
+
+.counter {
+  line-height: 20px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  transform: translateY(-20px);
+}
+
+.arrow:active:not(:disabled) {
+  transform: translateY(-20px) scale(0.96);
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+/* Stage: full overlay with 88px 96px padding; image contained, no radius */
+.stage {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 88px 96px;
+}
+
+.image {
+  width: auto;
+  height: auto;
+  max-width: min(1100px, 100%);
+  max-height: 100%;
+  object-fit: contain;
+}

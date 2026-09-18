@@ -1,0 +1,100 @@
+/* Audit §4 */
+.bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-sticky-nav);
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border-hairline);
+  transform: translateY(-67px);
+  opacity: 0;
+  transition: transform var(--duration-sticky), opacity var(--duration-sticky);
+}
+
+.bar[data-visible="true"] {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--sticky-nav-height);
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 0 var(--page-gutter);
+}
+
+.links {
+  display: flex;
+  gap: 4px;
+}
+
+.link {
+  position: relative;
+  display: block;
+  padding: 22px 8px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+/* Active underline: 2px #222 across the text (inset by the 8px padding). */
+.link[data-active="true"]::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: 0;
+  height: 2px;
+  background: var(--color-text);
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.priceBlock {
+  font-size: 13px;
+  line-height: 1.2;
+  text-align: right;
+}
+
+.price {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.nights {
+  font-size: 13px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3px;
+  margin-top: 2px;
+  line-height: 1.2;
+}
+
+.star {
+  display: inline-block;
+}
+
+.reserve {
+  height: 40px;
+  padding: 0 20px;
+  font-weight: 500;
+  color: var(--color-text-on-dark);
+  background: var(--gradient-cta);
+  border-radius: var(--radius-pill);
+  transition: filter var(--duration-hover-bg), transform 50ms;
+}
+
+.reserve:active {
+  transform: scale(0.98);
+}

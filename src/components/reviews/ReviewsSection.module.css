@@ -1,0 +1,152 @@
+/* Audit §9 — Reviews */
+.section {
+  padding: 48px 0;
+}
+
+.summary {
+  padding: 8px 0 40px;
+  text-align: center;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.laurel {
+  width: 72px;
+  height: 110px;
+}
+
+.bigRating {
+  font-size: 100px;
+  font-weight: 500;
+  line-height: 143px;
+  letter-spacing: -3px;
+}
+
+.favTitle {
+  margin-top: 8px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.43;
+}
+
+.favSubtitle {
+  max-width: 420px;
+  margin: 8px auto 0;
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+.howLink {
+  margin-top: 14px;
+  padding: 1px 6px;
+  font-weight: 500;
+  line-height: 18px;
+  text-decoration: underline;
+}
+
+/* Category grid: 7 auto columns, 24px side padding, hairline dividers */
+.categories {
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  padding: 8px 0 40px;
+}
+
+.category {
+  padding: 0 24px;
+  border-left: 1px solid var(--color-border-hairline);
+}
+
+.category:first-child {
+  padding-left: 24px;
+  border-left: 0;
+}
+
+.categoryLabel {
+  min-width: 100px;
+  margin-bottom: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.bars {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: 160px;
+}
+
+.barRow {
+  display: grid;
+  grid-template-columns: 8px 1fr;
+  align-items: center;
+  gap: 10px;
+}
+
+.barLabel {
+  font-size: 12px;
+  line-height: 1.43;
+}
+
+.barTrack {
+  height: 4px;
+  background: var(--color-border-hairline);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  background: var(--color-text);
+  border-radius: 2px;
+}
+
+.score {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.43;
+}
+
+/* Chip row overflows the container and is clipped, as in the reference. */
+.chips {
+  display: flex;
+  gap: 12px;
+  padding: 4px 0 30px;
+  overflow: hidden;
+}
+
+.chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 0 0 auto;
+  padding: 13px 18px 13px 14px;
+  font-weight: 500;
+  line-height: 18px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  white-space: nowrap;
+}
+
+.chipIcon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.chipCount {
+  color: var(--color-text-secondary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px 80px;
+  padding-bottom: 40px;
+}

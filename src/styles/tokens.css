@@ -1,0 +1,89 @@
+/*
+ * Design tokens measured from the reference (docs/reference-audit.md §1).
+ * Every component stylesheet reads from these variables; no raw hex values elsewhere.
+ */
+:root {
+  /* Typography */
+  --font-sans: "Airbnb Cereal VF", Circular, -apple-system, BlinkMacSystemFont, system-ui,
+    Roboto, "Helvetica Neue", sans-serif;
+  --text-base: 14px;
+  --leading-base: 20px;
+
+  /* Text */
+  --color-text: #222222;
+  --color-text-secondary: #717171;
+  --color-text-disabled: #dddddd;
+  --color-text-on-dark: #ffffff;
+
+  /* Brand */
+  --color-brand: #ff385c;
+  --gradient-cta: linear-gradient(to right, #e61e4d 0%, #e31c5f 50%, #d70466 100%);
+
+  /* Surfaces */
+  --color-bg: #ffffff;
+  --color-bg-soft: #f7f7f7;
+  --color-bg-muted: #f2f2f2;
+  --color-bg-hover-strong: #ebebeb;
+  --color-bg-placeholder: #eeeeee;
+  --color-bg-dark: #222222;
+  --color-overlay: rgba(0, 0, 0, 0.5);
+
+  /* Borders */
+  --color-border-hairline: #ebebeb;
+  --color-border: #dddddd;
+  --color-border-strong: #b0b0b0;
+  --color-border-dark: #222222;
+  --color-border-disabled: #cccccc;
+  --color-border-soft: rgba(0, 0, 0, 0.08);
+
+  /* Shadows */
+  --shadow-search: 0 1px 4px rgba(0, 0, 0, 0.08);
+  --shadow-pill: 0 2px 8px rgba(0, 0, 0, 0.15);
+  --shadow-card: 0 6px 16px rgba(0, 0, 0, 0.12);
+  --shadow-map-control: 0 2px 6px rgba(0, 0, 0, 0.2);
+  --shadow-marker: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+  /* Radii */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 20px;
+  --radius-pill: 999px;
+
+  /* Layout */
+  --page-max-width: 1280px;
+  --page-gutter: 80px;
+  --header-max-width: 1760px;
+  --header-height: 88px;
+  --sticky-nav-height: 66px;
+  --content-width: 1120px;
+  --booking-column-width: 372px;
+  --column-gap: 96px;
+  --tour-bar-height: 88px;
+  --tour-content-max-width: 1024px;
+
+  /* Motion (durations/easings observed on the reference) */
+  --ease-airbnb: cubic-bezier(0.2, 0, 0, 1);
+  --duration-tour: 300ms;
+  --duration-lightbox: 250ms;
+  --duration-modal: 250ms;
+  --duration-overlay: 200ms;
+  --duration-sticky: 250ms;
+  --duration-toast: 200ms;
+  --duration-hover-bg: 150ms;
+  --duration-icon-bg: 160ms;
+
+  /* Focus */
+  --focus-ring: 2px solid #222222;
+  --focus-ring-offset: 2px;
+
+  /* Z-index scale */
+  --z-header: 50;
+  --z-sticky-nav: 45;
+  --z-tour: 120;
+  --z-lightbox: 140;
+  --z-modal: 150;
+  --z-toast: 200;
+  --z-skip-link: 200;
+}
